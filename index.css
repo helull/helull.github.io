@@ -16,13 +16,16 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    padding: 40px 0;
 }
 
 .hero {
-    width: min(1100px, 90%);
+    width: min(1600px, 90%);
     text-align: center;
     color: white;
+    width: min(1400px, 95%);
 }
 
 .hero h1 {
@@ -38,13 +41,22 @@ body {
 
 .game-options {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
     gap: 30px;
 }
 
 .game-card {
-    display: block;
+    display: flex;
 
+    flex-direction: column;
+
+    justify-content: center;
     text-decoration: none;
     color: inherit;
 
@@ -55,6 +67,8 @@ body {
     border-radius: 20px;
 
     padding: 40px;
+
+    min-height: 220px;
 
     transition:
         transform 0.2s ease,
