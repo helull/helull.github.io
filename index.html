@@ -1,85 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Læringsspill</title>
-
-    <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14283c">
+  <meta name="description" content="Matematikk, skolehverdag og spill – samlet på ett sted.">
+  <title>Helges læringsportal</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f5f7fb; color: #17283c; }
+    main { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: clamp(28px, 6vw, 70px) 0 38px; }
+    header { background: linear-gradient(125deg, #14283c, #294a67); color: white; border-radius: 24px; padding: clamp(28px, 5vw, 48px); margin-bottom: 20px; box-shadow: 0 12px 30px #14283c18; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -.04em; margin: 0 0 10px; }
+    header p { margin: 0; color: #d9e6f3; font-size: clamp(1rem, 2vw, 1.14rem); }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { display: flex; flex-direction: column; min-height: 210px; padding: 26px; border-radius: 20px; text-decoration: none; border: 1px solid transparent; transition: transform .18s ease, box-shadow .18s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px #15283c19; }
+    .card:focus-visible { outline: 3px solid #15283c; outline-offset: 4px; }
+    .icon { width: 47px; height: 47px; display: grid; place-items: center; border-radius: 14px; background: #ffffffb5; font-size: 26px; margin-bottom: 17px; }
+    h2 { font-size: clamp(1.24rem, 2.8vw, 1.52rem); letter-spacing: -.025em; margin: 0 0 9px; }
+    .description { line-height: 1.5; margin: 0; font-size: .97rem; }
+    .destination { margin-top: auto; padding-top: 22px; font-size: .85rem; font-weight: 700; }
+    .math { background: #e9f2ff; color: #173b72; }
+    .schedule { background: #e6f6ef; color: #175c40; }
+    .games { background: #f2eaff; color: #56318a; }
+    .admin { background: #ebedf1; color: #3d4959; }
+    footer { text-align: center; color: #64748b; margin-top: 30px; font-size: .84rem; }
+    @media (max-width: 620px) { .cards { grid-template-columns: 1fr; gap: 12px; } .card { min-height: 165px; padding: 22px; } .icon { margin-bottom: 12px; } }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+  </style>
 </head>
-
 <body>
-
-    <div class="hero">
-
-        <h1>🎯 Læringsspill-hovedside</h1>
-
-        <p class="subtitle">
-            Velg hvilket spill du ønsker å spille
-        </p>
-
-        <div class="game-options">
-
-            <a href="q/match.html" class="game-card">
-                <div class="icon">🔗</div>
-
-                <h2>Kort prosess!</h2>
-
-                <p>
-                    Koble spørsmål og svar ved å finne riktige par.
-                </p>
-            </a>
-
-             <a href="q/memory.html" class="game-card">
-                <div class="icon">🧠</div>
-
-                <h2>Kort: Memory</h2>
-
-                <p>
-                    Snu kort og finn spørsmål og svar som hører sammen
-                </p>
-            </a>
-
-
-            <a href="q/pingpong.html" class="game-card">
-                <div class="icon">⚽</div>
-
-                <h2>Kort: Tennis</h2>
-
-                <p>
-                    Kjemp kort for kort mot en venn!
-                </p>
-            </a>
-                <a href="q/admin.html" class="game-card">
-                <div class="icon">❗</div>
-
-                <h2>Administrasjon av kort</h2>
-
-                <p>
-                    For lærer: Lag/endre kortstokker
-                </p>
-            </a>
-                <a href="matematikk/tre.html" class="game-card">
-                <div class="icon"><span style="color:gold;">△</span></div>
-
-                <h2>Trekant-regning</h2>
-
-                <p>
-                    Bli venn med trekanten!
-                </p>
-            </a>
-              </a>
-                <a href="matematikk/trekanttavle.html" class="game-card">
-                <div class="icon"><span style="color:gold;">❗</span></div>
-                <h2>Konkurranse på tavla</h2>
-
-                <p>
-                   For lærer: Lag trekant-konkurranse på en skjerm!
-                </p>
-            </a>
-        </div>
-
-    </div>
-
+  <main>
+    <header>
+      <h1>Velkommen!</h1>
+      <p>Læring, oversikt og spill – samlet på ett sted.</p>
+    </header>
+    <nav class="cards" aria-label="Hovedmeny">
+      <a class="card math" href="./matematikk/">
+        <span class="icon" aria-hidden="true">∑</span>
+        <h2>Matematikk</h2>
+        <p class="description">Utforsk matematikk med interaktive oppgaver og aktiviteter.</p>
+        <span class="destination">Gå til matematikk →</span>
+      </a>
+      <a class="card schedule" href="./timeplan/">
+        <span class="icon" aria-hidden="true">📅</span>
+        <h2>Min skolehverdag</h2>
+        <p class="description">Få oversikt over hverdagen som elev på Nesbru.</p>
+        <span class="destination">Åpne timeplanen →</span>
+      </a>
+      <a class="card games" href="./q/">
+        <span class="icon" aria-hidden="true">🎮</span>
+        <h2>Spill</h2>
+        <p class="description">Spill, utfordringer og konkurranser.</p>
+        <span class="destination">Gå til spill →</span>
+      </a>
+      <a class="card admin" href="./q/admin.html">
+        <span class="icon" aria-hidden="true">⚙️</span>
+        <h2>Administrer spill</h2>
+        <p class="description">Administrasjon og oppsett av spill.</p>
+        <span class="destination">Åpne administrasjon →</span>
+      </a>
+    </nav>
+    <footer>Helges læringsportal</footer>
+  </main>
 </body>
 </html>
