@@ -1,7 +1,11 @@
-Velkommen til Helge-lull!
+Hvorfor Helge-lull, eller Helgelull?
 
-Her samler jeg matematikkaktiviteter, lekse- og prøveplan og spill på ett sted.
+Jeg er fra en gård ved Tyrifjorden.  Når jeg var liten hadde mamma og pappa hjelp til å vaske og ordne hus og lage mat til oss "onga" og alle som var innom.  Borghild. som hun het, var hjelp rundt om på mange gårder og endel av betalingen var at hun spiste alle måltidene med "gårdsfolka". Borghild lærte oss "onga" å "drekke kaffi".  Det var jo ikke så godt, så det ble mye melk i kaffi'n.  Det er nok mer presist å kalle det "melk med kaffe" enn "kaffe med melk", lenge før jeg hadde hørt om cappuchino og caffe latte...
 
-Denne teksten kan du endre ved å redigere filen om-helge-lull.txt i GitHub-prosjektet helull.github.io.
+Borghild kalte meg Helge-lull. Det "hang lenge ved meg" og jeg syntes det var litt kleint når jeg var ungdom.  Men som voksen synes jeg det er mer morsomt enn kleint og det passer jo godt nå.  Jeg er lektor, heter Ullern og "Helge - L - Ull" er jo meg, mer enn noen gang.
 
-Hilsen Helge
+Jeg er lektor ved Nesbru vgs, og håper programmene her kan komme både elever og lærere til nytte.  Kontakt meg gjerne om du har innspill
+
+Helge Ullern
+Lektor Nesbru vgs
+helge_ullern@yahoo.com
