@@ -1,0 +1,7 @@
+Velkommen til Helge-lull!
+
+Her samler jeg matematikkaktiviteter, lekse- og prøveplan og spill på ett sted.
+
+Denne teksten kan du endre ved å redigere filen om-helge-lull.txt i GitHub-prosjektet helull.github.io.
+
+Hilsen Helge
