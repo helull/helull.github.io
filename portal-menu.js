@@ -4,21 +4,21 @@ if(document.getElementById('portal-nav-trigger'))return;
 const HOME='https://helull.github.io/';
 const sources=[{repo:'matematikk',label:'Matematikk',base:HOME+'matematikk/'},{repo:'q',label:'Spill',base:HOME+'q/'},{repo:'timeplan',label:'Timeplan',base:HOME+'timeplan/'}];
 const css=document.createElement('style');css.textContent=`
-#portal-nav-trigger{position:absolute!important;z-index:2147483000!important;width:40px!important;height:40px!important;border:0!important;border-radius:50%!important;background:rgba(255,255,255,.85)!important;color:#14283c!important;font:700 20px system-ui,sans-serif!important;box-shadow:0 6px 18px #0002!important;cursor:pointer!important;line-height:1!important;padding:0!important}
+#portal-nav-trigger{position:absolute!important;z-index:2147483000!important;width:40px!important;height:40px!important;border:0!important;border-radius:10px!important;background:rgba(255,255,255,.85)!important;color:#14283c!important;font:700 20px system-ui,sans-serif!important;box-shadow:0 6px 18px #0002!important;cursor:pointer!important;line-height:1!important;padding:0!important}
 #portal-nav-trigger:focus-visible,#portal-nav-panel a:focus-visible,#portal-nav-panel button:focus-visible{outline:3px solid #4a90e2;outline-offset:2px}
 #portal-nav-shade{position:fixed!important;inset:0!important;background:#08152588!important;z-index:2147483001!important}
-#portal-nav-panel{position:fixed!important;top:0!important;right:0!important;bottom:0!important;width:min(390px,94vw)!important;z-index:2147483002!important;background:#f5f7fb!important;color:#17283c!important;box-shadow:-8px 0 28px #0003!important;overflow:auto!important;padding:17px!important;font:15px/1.4 system-ui,sans-serif!important;text-align:left!important}
+#portal-nav-panel{position:fixed!important;top:0!important;right:0!important;bottom:0!important;width:min(305px,88vw)!important;z-index:2147483002!important;background:#f5f7fb!important;color:#17283c!important;box-shadow:-8px 0 28px #0003!important;overflow:auto!important;padding:10px!important;font:13px/1.3 system-ui,sans-serif!important;text-align:left!important}
 #portal-nav-panel *{box-sizing:border-box!important}
-#portal-nav-panel .portal-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin-bottom:14px!important}
-#portal-nav-panel .portal-head strong{font-size:1.2rem!important}
-#portal-nav-panel button.portal-close{border:0!important;background:#e4eaf2!important;border-radius:10px!important;color:#17283c!important;padding:7px 11px!important;font-size:22px!important;cursor:pointer!important}
-#portal-nav-panel a{color:#17283c!important;text-decoration:none!important;display:block!important;padding:9px 11px!important;border-radius:10px!important;overflow-wrap:anywhere!important;background:#f3f6fb!important;margin:3px 0!important;border:1px solid #e5eaf1!important}
+#portal-nav-panel .portal-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:7px!important;margin-bottom:5px!important}
+#portal-nav-panel .portal-head strong{font-size:1rem!important}
+#portal-nav-panel button.portal-close{border:0!important;background:#e4eaf2!important;border-radius:10px!important;color:#17283c!important;padding:4px 8px!important;font-size:19px!important;cursor:pointer!important}
+#portal-nav-panel a{color:#17283c!important;text-decoration:none!important;display:block!important;padding:5px 7px!important;border-radius:6px!important;overflow-wrap:anywhere!important;background:#f3f6fb!important;margin:2px 0!important;border:1px solid #e5eaf1!important}
 #portal-nav-panel a:hover{background:#e6eef9!important}
-#portal-nav-panel details{border:1px solid #dce5ef!important;border-radius:11px!important;background:white!important;margin:7px 0!important;overflow:hidden!important}
-#portal-nav-panel summary{padding:10px 12px!important;cursor:pointer!important;font-weight:750!important;list-style-position:inside!important;color:#17283c!important}
-#portal-nav-panel .portal-children{padding:0 7px 7px 14px!important}
+#portal-nav-panel details{border:1px solid #dce5ef!important;border-radius:7px!important;background:white!important;margin:2px 0!important;overflow:hidden!important}
+#portal-nav-panel summary{padding:6px 8px!important;cursor:pointer!important;font-weight:750!important;list-style-position:inside!important;color:#17283c!important}
+#portal-nav-panel .portal-children{padding:0 4px 4px 8px!important}
 #portal-nav-panel .portal-children details{margin:4px 0!important}
-#portal-nav-panel .portal-small{color:#64748b!important;font-size:12px!important;margin:10px 4px!important}
+#portal-nav-panel .portal-small{color:#64748b!important;font-size:11px!important;margin:6px 3px!important}
 #portal-nav-panel .portal-home{background:#e9f2ff!important;color:#173b72!important;font-weight:750!important;margin-bottom:8px!important}
 #portal-nav-panel details.portal-math{background:#e9f2ff!important;border-color:#d6e5fb!important}
 #portal-nav-panel details.portal-games{background:#f2eaff!important;border-color:#e6d6fc!important}
@@ -26,7 +26,7 @@ const css=document.createElement('style');css.textContent=`
 #portal-nav-panel details.portal-math>summary{color:#173b72!important}
 #portal-nav-panel details.portal-games>summary{color:#56318a!important}
 #portal-nav-panel details.portal-schedule>summary{color:#175c40!important}
-#portal-nav-panel .portal-children{background:#fff!important;border-radius:0 0 10px 10px!important}
+#portal-nav-panel .portal-children{background:#fff!important;border-radius:0 0 6px 6px!important}
 body.portal-nav-open{overflow:hidden!important}
 `;document.head.append(css);
 const trigger=document.createElement('button');trigger.id='portal-nav-trigger';trigger.type='button';trigger.textContent='☰';trigger.setAttribute('aria-label','Åpne programmeny');trigger.setAttribute('aria-expanded','false');document.body.append(trigger);
