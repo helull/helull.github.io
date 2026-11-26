@@ -2,7 +2,7 @@
 (()=>{'use strict';
 if(document.getElementById('portal-nav-trigger'))return;
 const HOME=window.location.origin+'/';
-const sources=[{repo:'timeplan',label:'Lekse- og prøveplan',base:HOME+'timeplan/'},{repo:'matematikk',label:'Matematikk',base:HOME+'matematikk/'},{repo:'q',label:'Spill',base:HOME+'q/'}];
+const sources=[{repo:'timeplan',label:'Min Timeplan',base:HOME+'timeplan/'},{repo:'matematikk',label:'Matematikk',base:HOME+'matematikk/'},{repo:'q',label:'Spill',base:HOME+'q/'}];
 const css=document.createElement('style');css.textContent=`
 #portal-nav-trigger{position:absolute!important;z-index:2147483000!important;width:40px!important;height:40px!important;border:0!important;border-radius:10px!important;background:rgba(255,255,255,.85)!important;color:#14283c!important;font:700 20px system-ui,sans-serif!important;box-shadow:0 6px 18px #0002!important;cursor:pointer!important;line-height:1!important;padding:0!important}
 #portal-nav-trigger:focus-visible,#portal-nav-panel a:focus-visible,#portal-nav-panel button:focus-visible{outline:3px solid #4a90e2;outline-offset:2px}
